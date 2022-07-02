@@ -59,8 +59,7 @@ def get_prop_info(): #get price and address info from property
     dict_prop_info['Price'].append(price)
     address = driver.find_element(By.XPATH, '//*[@data-testid="address-label"]').text
     dict_prop_info['Address'].append(address)
-    #bedroom = driver.find_element(By.XPATH, '//*[@id="main-content"]/div[1]/div[1]/div/div[2]/div[7]/div[1]/div[1]/div[1]/div').text
-    #dict_prop_info['Bedrooms'].append(bedroom)
+    
     return dict_prop_info
 
 info_list = []
