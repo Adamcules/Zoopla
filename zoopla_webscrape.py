@@ -9,9 +9,7 @@ def load_and_accept_cookies() -> webdriver.Chrome:
     driver = webdriver.Chrome() 
     URL = "https://www.zoopla.co.uk/new-homes/property/london/?q=London&results_sort=newest_listings&search_source=new-homes&page_size=25&pn=1&view_type=list"
     driver.get(URL)
-
     time.sleep(2) # Wait a couple of seconds, so the website doesn't suspect you are a bot
-
     try:
         driver.switch_to.frame('gdpr-consent-notice') # This is the id of the frame
         accept_cookies_button = driver.find_element(By.XPATH, '//*[@id="save"]')
