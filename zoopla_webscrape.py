@@ -21,7 +21,7 @@ def load_and_accept_cookies() -> webdriver.Chrome:
 
 def get_links(driver: webdriver.Chrome) -> list:
 
-    prop_container = driver.find_element(By.XPATH, '//*[@class="css-1itfubx e52km7k0"]') # find div tag containing all property listings
+    prop_container = driver.find_element(By.XPATH, '//*[@class="css-1itfubx e1c0stq80"]') # find div tag containing all property listings
 
     prop_list = prop_container.find_elements(By.XPATH, './div') # list of properties on page
     link_list = [] # will contain hyperlinks to all listed properties
