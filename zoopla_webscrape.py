@@ -70,4 +70,3 @@ for hyper in big_link_list:
 
 print (f'There are {len(big_link_list)} properties on these pages')
 print (info_list)
-print ("where am I!")
